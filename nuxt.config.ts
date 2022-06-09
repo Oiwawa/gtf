@@ -20,6 +20,10 @@ export default defineNuxtConfig({
     },
 
     buildModules: [
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
     ],
+
+    publicRuntimeConfig: {
+        API_URL: process.env.FLAG_API_URL,
+    },
 })
