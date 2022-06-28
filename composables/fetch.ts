@@ -8,8 +8,9 @@ export const fetchFlag = async () => {
 
 export const checkAnswer = async (params: object) => {
   const config = useRuntimeConfig();
-  const url = 'https://' + config.API_URL + 'country/check/';
+  const url = 'https://' + config.API_URL + 'country/checkAnswer';
   return await $fetch(url, {
-    params: params,
+    body: params,
+    method: 'POST'
   });
 }
