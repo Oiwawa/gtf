@@ -31,6 +31,7 @@
           Submit
         </button>
       </div>
+      <button v-on:click="goNext" value="next">next</button>
     </div>
   </div>
 </template>
